@@ -3,6 +3,8 @@ import { useRouter } from "vue-router";
 import { onMounted } from "vue";
 import { register } from "@teamhanko/hanko-elements";
 
+import "../../style/hanko-style.css"
+
 const hankoApi = import.meta.env.VITE_HANKO_API_URL;
 
 const router = useRouter();
@@ -16,10 +18,11 @@ onMounted(() => {
   register(hankoApi)
     .catch((error) => {
       // handle error
+      console.log(error);
     });
 });
 </script>
 
 <template>
-  <hanko-auth @onAuthFlowCompleted="redirectAfterLogin" />
+  <hanko-auth @onSessionCreated="redirectAfterLogin" />
 </template>
