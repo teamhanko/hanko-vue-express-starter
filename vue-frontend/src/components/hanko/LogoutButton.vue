@@ -12,7 +12,7 @@ const logout = () => {
     // handle error
     console.log(error)
   })
-  router.push("/")
+  router.push("/")//Path user will be redirected to after logging out
 }
 
 </script>

@@ -25,7 +25,7 @@
         </div>
         <div className='userDropdown'>
             <button @click="router.push('/profile')" v-if="route.path.includes('dashboard') ">Profile</button>
-            <button @click="router.push('/dashboard')" v-if="route.path.includes('profile')   ">Dashboard</button>
+            <button @click="router.push('/dashboard')" v-if="route.path.includes('profile') ">Dashboard</button>
             <LogoutButton></LogoutButton>
         </div>
       </div>

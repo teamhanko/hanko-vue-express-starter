@@ -35,7 +35,7 @@ const router = createRouter({
         name: 'profile',
        component: ProfileView
       },
-    ]
+    ],
   })
   
   

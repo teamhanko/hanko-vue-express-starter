@@ -1,5 +1,3 @@
-
-
 <script setup lang="ts">
   import HankoStarterHeader from '../components/starter/HankoStarterHeader.vue'
   import HankoStarterInfo from '../components/starter/HankoStarterInfo.vue'
