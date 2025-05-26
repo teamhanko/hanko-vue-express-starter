@@ -8,7 +8,7 @@ const router = useRouter();
 const hanko = new Hanko(hankoApi);
 
 const logout = () => {
-  hanko.user.logout().catch((error) => {
+  hanko.logout().catch((error) => {
     // handle error
     console.log(error)
   })
@@ -18,5 +18,5 @@ const logout = () => {
 </script>
 
 <template>
-  <button @click="logout">Logout</button>
+  <button @click="logout">Sign-Out</button>
 </template>

@@ -5,8 +5,8 @@
     const hankoApi = import.meta.env.VITE_HANKO_API_URL;
     const hanko = new Hanko(hankoApi);
 
-    const email = (await hanko?.user.getCurrent())?.email
-    const id = (await hanko?.user.getCurrent())?.id
+    const email = (await hanko?.getUser())?.emails?.[0].address;
+    const id = (await hanko?.getUser())?.user_id;
 </script>
 
 <template>

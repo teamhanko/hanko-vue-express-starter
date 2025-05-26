@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@teamhanko/hanko-elements": "^1.4.0",
+    "@teamhanko/hanko-elements": "^2.1.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
