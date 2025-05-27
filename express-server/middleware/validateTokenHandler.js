@@ -24,12 +24,11 @@ async function validateToken(req, res, next) {
 
     const validationResponse = await fetch(hankoApiUrl + '/sessions/validate', validationOptions); 
 
-    if(!validationResponse.ok){
+    if(!validationResponse.ok) {
         authError = true;
-    }
-    else{
+    } else {
         const validationData = await validationResponse.json();
-        if(!validationData.is_valid){
+        if(!validationData.is_valid) {
             authError = true;
         }
     }
