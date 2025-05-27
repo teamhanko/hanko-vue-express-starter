@@ -1,14 +1,11 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
-const router = useRouter()
-
-const navigateToLogin = () => {
-  router.push('/login')
-}
+  import HankoAuth from '../components/hanko/HankoAuth.vue'
+  import HankoStarterInfo from '../components/starter/HankoStarterInfo.vue'
 </script>
 
 <template>
   <main>
-    <button @click="navigateToLogin">Login</button>
+    <HankoAuth/>
+    <HankoStarterInfo/>
   </main>
 </template>

@@ -1,17 +1,15 @@
 <script setup lang="ts">
   import HankoStarterHeader from '../components/starter/HankoStarterHeader.vue'
   import HankoStarterInfo from '../components/starter/HankoStarterInfo.vue'
-  import HankoStarterDashboard from '../components/starter/HankoStarterDashboard.vue'
+  import HankoProfile from '../components/hanko/HankoProfile.vue';
 </script>
-  
+
 <template>
   <main>
     <Suspense>
       <HankoStarterHeader/>
     </Suspense>
-    <Suspense>
-      <HankoStarterDashboard/>
-    </Suspense>
     <HankoStarterInfo/>
-  </main>
+    <HankoProfile></HankoProfile>
+</main>
 </template>
