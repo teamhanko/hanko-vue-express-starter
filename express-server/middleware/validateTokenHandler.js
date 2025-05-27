@@ -2,10 +2,9 @@ const hankoApiUrl = process.env.HANKO_API_URL || '';
 
 async function validateToken(req, res, next) {
     let token = null;
-    if ( req.headers.authorization && req.headers.authorization.split(" ")[0] === "Bearer"){
+    if (req.headers.authorization && req.headers.authorization.split(" ")[0] === "Bearer") {
         token = req.headers.authorization.split('')[1];
-    }
-    else if(req.cookies && req.cookies.hanko){
+    } else if(req.cookies && req.cookies.hanko) {
         token = req.cookies.hanko;
     }
 
